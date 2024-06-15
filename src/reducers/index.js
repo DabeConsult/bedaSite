@@ -12,7 +12,7 @@ export const DataProvider = ({ children }) => {
         try {
           const content = await runFun();
           setData(content);
-          setLoading(false);
+          setLoading(false)
         } catch (error) {
           console.error("Error fetching data:", error);
           setLoading(false);

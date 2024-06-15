@@ -12,7 +12,6 @@ import { useContext } from "react";
 import ProjectDetails from "./pages/ProjectDetails";
 import DataContext from "./reducers";
 import BlogDetails from "./pages/BlogDetails";
-import MailChimp from "./pages/MailChimp";
 
 function App() {
   const {data, loading} = useContext(DataContext);
@@ -30,7 +29,6 @@ function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="aboutUs" element={<AboutUs />} />
           <Route path="contactUs" element={<ContactUs />} />
-          <Route path="mail" element={<MailChimp />} />
           {/* <Route path="api/newsletter" element={<Newsletter />} /> */}
         </Route>
         <Route path="*" element={<ErrorPage />} />

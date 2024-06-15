@@ -250,3 +250,23 @@ body {
 .icon {
   fill: red !important; /* Change fill color to red */
 }
+
+.image-fade-in {
+  position: absolute;
+  bottom: 0;
+  transition: opacity 3s ease-in-out; 
+}
+.image-fade-in.fade-in {
+  position: absolute;
+  bottom: 50%;
+  transition: opacity 3s ease-in-out; 
+}
+
+/* .image-fade-in {
+  opacity: 0;
+  transition: opacity 3s ease-in-out; 
+}
+.image-fade-in.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in-out; 
+} */

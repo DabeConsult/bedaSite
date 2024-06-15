@@ -2,8 +2,7 @@ import { createClient } from "contentful";
 
 export const client = createClient({
   space: process.env.REACT_APP_CONTENTFUL_SPACE_KEY,
-  accessToken: "y9gyyxYUpcLlJQcXfgPYRMIuLZNOSQLc42n9yA3nY_Q"
-  // accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN
+  accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN
 });
 
 

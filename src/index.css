@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}
+
+#scrollbarDesign::-webkit-scrollbar {
+  width: 5px;
+  cursor: pointer;
+}
+
+#scrollbarDesign::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #1e2965;
+  /* border: 1px solid #cacaca; */
+}
+
+#scrollbarDesign::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #1C467D;
+}
+
+.textFormatter{
+  white-space: pre-wrap;
+  h1 {
+    font-size: 2.5rem; /* 40px */
+    line-height: normal;
+  }
+  h2 {
+    font-size: 2rem; /* 32px */
+    line-height: normal;
+  }
+  h3 {
+    font-size: 1.75rem; /* 28px */
+    line-height: normal;
+  }
+  ul{
+    list-style: disc;
+    list-style-position: inside;
+  }
+  ol{
+    list-style-position: inside !important;
+    list-style: decimal;
+  }
+  a{
+    color: #5DE6EF;
+  }
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.homeBg{
+  /* background-color: #022a52; */
+  background-image: url("./assets/Images/homeBgSvg.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.logoFont{
+  font-family: "Poetsen One", sans-serif;
+}
+
+.logoFontBg{
+  font-family: "Poetsen One", sans-serif;
+  background: linear-gradient(to right, #ffff, #80bdf9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.homeBg2{
+  background: linear-gradient(to bottom, #094989, #00172e);
+}
+
+/* .srvBg2{
+  background: linear-gradient(to bottom, #0987ed, #013161);
+} */
+
+.prjctBg{
+  /* background-color: #022a52; */
+  background-image: url("./assets/Images/boxyBg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  opacity: 0.2;
+}
+
+.prjctBg2{
+  background: linear-gradient(to right, #01264b, #001f3d);
+  opacity: 1;
+}
+
+.srvBg{
+  /* background-color: #022a52; */
+  background-image: url("./assets/Images/servBg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  opacity: 0.1;
+}
+
+.srvBg2{
+  background: linear-gradient(to bottom, #0863bf, #00172e, #00172e);
+}
+
+.cnctBg2{
+  background: linear-gradient(to bottom, #0863bf, #00172e, #11112A);
+}
+
+.prjctBg2{
+  background: linear-gradient(to bottom, #0C6AB5, #0B559A, #11112A, #11112A);
+}
+
+.prjctCardBg{
+  background: linear-gradient(to bottom, #0B559A, #0C6AB5);
+}
+
+.appSrvCardBg2{
+  background: linear-gradient(to bottom, #0B579D, #00172e);
+}
+
+.strategyBg2{
+  /* #0863bf, #00172e, #11112A */
+  background: linear-gradient(to bottom, #0B579D, #11112A);
+}
+
+.aboutBg2{
+  background: linear-gradient(to bottom, #0863bf, #0A4B8E, #00172e, #00172e);
+}
+
+/* .aboutBg3{
+  background: linear-gradient(to right, #0863bf, #0863bf);
+} */
+
+.worksBg{
+  /* background-color: #022a52; */
+  background-image: url("./assets/Images/servBg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  opacity: 0.4;
+}
+
+.worksBg2{
+  background: linear-gradient(to bottom, #00172e, #00172e, #00172e);
+}
+
+
+.homeHeight{
+  width: 100%;
+  height: calc(100vh - 90px);
+}
+
+
+.chooseUsBg{
+  background-image: url("./assets/Images/chooseUs_bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  opacity: 0.1;
+}
+
+.chooseUsBg2{
+  background: linear-gradient(to bottom, #094989, #094989, #0f60b0, #036cd5);
+  opacity: 1;
+}
+
+.believeBg2{
+  background: linear-gradient(to right, #0A136F, #0C79C6);
+  opacity: 1;
+}
+
+/* .believeBg2{
+  background-image: url("./assets/Images/belivBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+} */
+.footBg2{
+  background-image: url("./assets/Images/curlyLine2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.appSearchBg{
+  background: linear-gradient(to bottom, #4B4E70, #242851);
+}
+
+
+.text-outline {
+  color: transparent; /* Transparent fill */
+   -webkit-text-stroke: 0.005em #fff; 
+  /* -webkit-text-stroke: 1px #fff;  */
+  /* text-fill-color: transparent; Required for Firefox */
+}
+
+.shd:hover{
+  box-shadow: 0 0 20px #5DE6EF;
+}
+
+
+
+/* ///////////// */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* gap: 16px; Adjust the gap between grid items as needed */
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  /* gap: 16px; Adjust the gap between grid items as needed */
+}
+
+.icon {
+  fill: red !important; /* Change fill color to red */
+}

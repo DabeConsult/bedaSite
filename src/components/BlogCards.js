@@ -283,7 +283,7 @@ function BlogCards() {
               <input
                 onInput={(e) => searchBlog(e.target.value)}
                 className="w-full pl-1 pr-10 text-white outline-none border-b border-b-white bg-transparent focus:border-b-[#5DE6EF]"
-                placeholder="Enter your keywords ....."
+                placeholder="Enter your keywords ......"
               />
               <FaSearch className="text-white font-normal absolute right-0 top-0 cursor-pointer" />
               {searchWord && (

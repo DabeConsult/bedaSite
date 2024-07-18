@@ -188,7 +188,8 @@ function ContactUsComp() {
             <div className="w-[320px] md:w-[550px] lg:w-[600px] h-[380px] rounded-2xl overflow-hidden absolute top-1 left-1">
               <iframe
                 title="MapImage"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9421711617524!2d-0.28538792688950276!3d5.57556833345648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf992979bdf137%3A0x8287535666ec5588!2sBeda%20Techsurance%20Ltd!5e0!3m2!1sen!2sgh!4v1716983439158!5m2!1sen!2sgh"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.51453843681!2d30.1299327113598!3d-1.9471645366990236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca71254a22233%3A0xeed655a729a9ae6b!2sKG%2097%20St%2C%20Kigali%2C%20Rwanda!5e0!3m2!1sen!2sgh!4v1721244981413!5m2!1sen!2sgh"
+                // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9421711617524!2d-0.28538792688950276!3d5.57556833345648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf992979bdf137%3A0x8287535666ec5588!2sBeda%20Techsurance%20Ltd!5e0!3m2!1sen!2sgh!4v1716983439158!5m2!1sen!2sgh"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

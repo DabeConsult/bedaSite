@@ -12,6 +12,7 @@ import { useContext } from "react";
 import ProjectDetails from "./pages/ProjectDetails";
 import DataContext from "./reducers";
 import BlogDetails from "./pages/BlogDetails";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   const {data, loading} = useContext(DataContext);
@@ -20,7 +21,8 @@ function App() {
     !loading && (
       <Routes>
         <Route>
-          <Route index element={<Home />} />
+          <Route index element={<LandingPage />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="services" element={<Services />} />
           <Route path="app/:appID" element={<AppDevServices />} />
           <Route path="projects" element={<Projects />} />

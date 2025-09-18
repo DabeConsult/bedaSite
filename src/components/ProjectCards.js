@@ -121,7 +121,7 @@ function ProjectCards() {
                         to="/projectsDet"
                         className=" h-full flex items-center justify-center"
                       > */}
-                      Read More
+                      Read Mores
                       {/* <HiArrowLongRight className="text-3xl pt-1" /> */}
                       {/* </RouteLink> */}
                     </button>

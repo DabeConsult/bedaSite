@@ -69,11 +69,7 @@ function ProjectsMain() {
                     <p className="w-full h-fit overflow-hidden text-sm text-center">
                       {card?.fields.projectDetails}
                     </p>
-                    <button className=" px-5 py-2 text-sm bg-white text-[#11112A] font-semibold rounded-md transition group-hover:bg-[#11112A] group-hover:text-white">
-                      <RouteLink to={"projectsDet/" + card?.fields.clientName}>
-                        Read More
-                      </RouteLink>
-                    </button>
+                   
                   </div>
                 </div>
               );

@@ -57,8 +57,8 @@ function FaqMain() {
           ))}
         </div>
         <button className="ml-3 md:ml-0 absolute bottom-10 px-10 py-2 bg-[#036cd5]  text-white font-semibold rounded-md transition hover:bg-[#22476c]">
-          <RouteLink to="/blog" className="flex items-center gap-3">
-            Read More
+          <RouteLink to="https://calendly.com/beda-consult/30min" target="_blank" className="flex items-center gap-3">
+            Ask a Question
             <FaArrowRight className="pt-1" />
           </RouteLink>
         </button>

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { Link as RouteLink } from "react-router-dom";
 import BedaLogo from "./BedaLogo";
+import Frame from "../assets/Images/Frame 2.png";
 
 function NavBar({ bgCl }) {
   const mainRef = useRef(null);
@@ -14,32 +15,17 @@ function NavBar({ bgCl }) {
   return (
     <nav
       ref={mainRef}
-      className={`w-full h-20 flex border-b border-gray-200 relative ${bgCl}`}
+      className={`w-full h-20 flex items-center border-b border-gray-200 relative ${bgCl}`}
     >
-      <RouteLink to={"/"} className="w-3/4 md:w-2/5 lg:w-1/4 h-full">
-        <div className="w-full h-full pl-5 md:pl-10 lg:pl-24 cursor-pointer">
-          <BedaLogo />
-        </div>
-
-        {/* <div className="w-full h-full flex items-center px-14 cursor-pointer">
-          <div className="w-fit h-5/6 flex items-center justify-start pr-2 ">
-            <img
-              src={logo}
-              alt="Logo"
-              className=" h-full w-fit object-contain"
-            />
-          </div>
-          <div className="w-full h-full flex flex-col justify-center ">
-            <p className={`text-white text-3xl`}>BEDA</p>
-            <span className={` text-white text-[0.6em]`}>
-              TECH FOR ALL, IN ALL
-            </span>
-          </div>
-        </div> */}
+      {/* Logo Section */}
+      <RouteLink to={"/"} className="flex items-center h-full px-5 md:px-10 lg:px-24">
+        <img src={Frame} alt="Frame" className="h-16 w-auto object-contain" />
+              
       </RouteLink>
 
-      <div className="w-3/4 h-full px-6 md:px-10 lg:px-28 hidden lg:flex items-center justify-end ">
-        <ul className="list-none flex gap-6 text-white cursor-pointer">
+      {/* Navigation Links */}
+      <div className="flex-1 h-full px-6 md:px-10 lg:px-28 hidden lg:flex items-center justify-end">
+        {/* <ul className="list-none flex gap-6 text-white cursor-pointer">
           <li className="text-[0.9em] hover:text-[#4ac9ff] transition">
             <RouteLink to={"/aboutUs"}>ABOUT US</RouteLink>
           </li>
@@ -52,57 +38,30 @@ function NavBar({ bgCl }) {
           <li className="text-[0.9em] hover:text-[#4ac9ff] transition">
             <RouteLink to={"/blog"}>BLOG</RouteLink>
           </li>
-        </ul>
+        </ul> */}
         <RouteLink
-          to={"/contactUs"}
-          className="bg-white px-8 py-[8px] text-sm ml-16 rounded-md font-semibold transition hover:bg-[#11112A] hover:text-white"
+          to={"https://calendly.com/beda-consult/30min"}
+          target="_blank"
+          className="bg-white px-8 py-[8px] text-sm ml-8 rounded-md font-semibold transition hover:bg-[#11112A] hover:text-white"
         >
           CONTACT
         </RouteLink>
       </div>
 
-      <div className="w-1/4 md:w-3/5 flex items-center justify-end px-3 text-white cursor-pointer lg:hidden">
+      {/* Mobile Menu Icon */}
+      <div className="flex-1 flex items-center justify-end px-3 text-white cursor-pointer lg:hidden">
         <IoMdMenu className="text-3xl" onClick={() => setShowMenu(!showMenu)} />
       </div>
       {showMenu && (
-        <div className="w-80 p-5 bg-[#11112ab7] absolute -bottom-[285px] right-1 z-[99999]">
-          <ul className="list-none flex flex-col gap-6 text-white cursor-pointer">
-            <li
-              className="h-5 text-[0.9em] hover:text-[#4ac9ff] transition"
-              onClick={() => setShowMenu(!showMenu)}
-            >
-              <RouteLink to={"/"}>Home</RouteLink>
-            </li>
-            <li
-              className="h-5 text-[0.9em] hover:text-[#4ac9ff] transition"
-              onClick={() => setShowMenu(!showMenu)}
-            >
-              <RouteLink to={"/aboutUs"}>ABOUT US</RouteLink>
-            </li>
-            <li
-              className="h-5 text-[0.9em] hover:text-[#4ac9ff] transition"
-              onClick={() => setShowMenu(!showMenu)}
-            >
-              <RouteLink to={"/services"}>SERVICES</RouteLink>
-            </li>
-            <li
-              className="h-5 text-[0.9em] hover:text-[#4ac9ff] transition"
-              onClick={() => setShowMenu(!showMenu)}
-            >
-              <RouteLink to={"/projects"}>PROJECTS</RouteLink>
-            </li>
-            <li
-              className="h-5 text-[0.9em] hover:text-[#4ac9ff] transition"
-              onClick={() => setShowMenu(!showMenu)}
-            >
-              <RouteLink to={"/blog"}>BLOG</RouteLink>
-            </li>
-          </ul>
+        <div className="w-80 p-5 bg-[#11112ab7] absolute -bottom-[80px] right-1 z-[99999] rounded-lg backdrop-blur-sm">
           <button
-            className="w-full bg-white py-[8px] mt-3 text-sm rounded-md font-semibold transition hover:bg-[#11112A] hover:text-white"
+            className="w-full bg-white py-3 text-base rounded-md font-semibold transition-all duration-300 
+             hover:bg-[#11112A] hover:text-white hover:shadow-lg active:scale-95"
             onClick={() => setShowMenu(!showMenu)}
           >
-            <RouteLink to={"/contactUs"}>CONTACT</RouteLink>
+            <RouteLink to={"/contactUs"} className="w-full h-full flex items-center justify-center">
+              CONTACT
+            </RouteLink>
           </button>
         </div>
       )}

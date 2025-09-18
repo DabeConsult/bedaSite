@@ -69,12 +69,12 @@ function Believe() {
             <p className="text-center text-xl md:text-3xl font-bold">{homeData?.sec3Count3}</p>
             <p className="text-center text-xs md:text-md">{homeData?.sec3Count3name}</p>
           </div>
-          <RouteLink to={"/aboutUs"}>
-            <button className="absolute -left-2 bottom-16 md:bottom-auto md:top-28 md:left-2 lg:left-14 lg:top-20 px-2 text-sm md:text-md md:px-5 py-2 bg-white text-[#11112A] font-semibold rounded-md z-50 transition hover:bg-[#11112A] hover:text-white">
+          {/* <RouteLink to={"/aboutUs"}>
+            <button className="absolute -left-2 bottom-16 md:bottom-auto md:top-28 md:left-2 lg:left-14 lg:top-20 px-2 text-sm md:text-md md:px-5 py-2 bg-white text-[#11112A] font-semibold rounded-md z-50 transition hover:bg-[#11112A] hover:text-white"> */}
             {/* <button className="absolute -left-2 bottom-10 md:left-2 lg:left-5 lg:bottom-20 px-2 text-sm md:text-md md:px-5 py-2 bg-white text-[#11112A] font-semibold rounded-md z-50 transition hover:bg-[#11112A] hover:text-white"> */}
-              Read More
+              {/* Read More
             </button>
-          </RouteLink>
+          </RouteLink> */}
           <div  ref={ref}
             className="w-full h-52 absolute left-auto -bottom-3 md:bottom-auto md:-top-10 lg:-top-12 opacity-30"
             // className="w-full h-52 absolute left-auto -bottom-10 md:bottom-56 lg:bottom-14 opacity-30"

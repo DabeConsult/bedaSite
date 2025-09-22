@@ -50,7 +50,7 @@ const BTechLandingPage = () => {
         {/* Central Hub with Lightbulb and Category Buttons */}
         <div className="relative flex items-center justify-center mb-12 lg:mb-24 scale-75 md:scale-90 lg:scale-100">
           {/* Technology - Top */}
-          <button className="absolute -top-16 lg:-top-20 bg-white border border-gray-200 rounded-full px-6 lg:px-8 py-3 lg:py-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 flex items-center space-x-3 z-10">
+          <button className="absolute -top-16 lg:-top-20 bg-white border border-gray-200 rounded-full px-6 lg:px-8 py-3 lg:py-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 flex items-center space-x-3 z-10" style={{ top: 'var(--technology-top, -4rem)' }}>
            <img 
               src={LogoTechnology} 
               alt="Technology Icon"
@@ -72,7 +72,7 @@ const BTechLandingPage = () => {
           </button>
 
          {/* Transport - Right */}
-          <button className="absolute -right-40 lg:-right-52 top-4 lg:top-6 bg-white border border-gray-200 rounded-full px-6 lg:px-8 py-3 lg:py-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 flex items-center space-x-3 z-10">
+          <button className="absolute -right-40 lg:-right-52 top-4 lg:top-6 bg-white border border-gray-200 rounded-full px-6 lg:px-8 py-3 lg:py-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 flex items-center space-x-3 z-10" style={{ top: 'var(--transport-top, 1rem)' }}>
              <img 
               src={LogoTransport} 
               alt="Technology Icon"
@@ -122,11 +122,12 @@ const BTechLandingPage = () => {
           </button>
 
           {/* Large Central Lightbulb - No Circle Background */}
-          <div className="flex items-center justify-center relative">
+          <div className="flex items-center justify-center relative" style={{ transform: 'var(--lightbulb-transform, scale(1))' }}>
             <img 
               src={Lightbulb} 
               alt="Innovation" 
               className="w-32 lg:w-48 h-40 lg:h-60 drop-shadow-2xl hover:scale-105 transition-transform duration-300" 
+              style={{ marginTop: 'var(--lightbulb-margin-top, 0)' }}
             />
           </div>
         </div>
@@ -196,6 +197,28 @@ const BTechLandingPage = () => {
         
         .animate-infinite-scroll {
           animation: infinite-scroll 20s linear infinite;
+        }
+
+        /* Default for all browsers */
+        :root {
+          --transport-top: 1rem;
+          --technology-top: -4rem;
+          --lightbulb-transform: scale(1);
+          --lightbulb-margin-top: 0;
+        }
+
+           /* Firefox-specific adjustments */
+        @-moz-document url-prefix() {
+          .min-h-screen {
+            zoom: 0.80;
+            --transport-top: 5rem;
+            --health-top: 8rem;
+            --technology-top: -0.5rem;
+            --farming-left: 10rem;
+            --minerals-right: -60rem;
+            --lightbulb-transform: scale(0.9);
+            --lightbulb-margin-top: 45px;
+          }
         }
       `}</style>
     </div>

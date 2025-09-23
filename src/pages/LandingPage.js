@@ -35,14 +35,14 @@ const BTechLandingPage = () => {
       {/* Main Content */}
       <main className="flex-1 flex flex-col items-center justify-center px-3 sm:px-4 lg:px-6 py-4 lg:py-8">
         {/* Main Title */}
-        <div className="text-center mb-3 lg:mb-3 -mt-10 sm:-mt-16 lg:-mt-20 px-2">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-slate-800 mb-2 sm:mb-4 lg:mb-2 leading-tight">
+       <div className="text-center mb-2 -mt-6 px-2">
+          <h1 className="text-xl sm:text-3xl md:text-3xl lg:text-6xl font-bold text-slate-800 mb-1 leading-tight">
             Innovation and Technology
           </h1>
-          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-slate-800 leading-tight">
+          <h1 className="text-xl sm:text-3xl md:text-3xl lg:text-6xl font-bold text-slate-800 leading-tight">
             for 360° Value
           </h1>
-        </div>
+      </div>
         <br />
         <br />
         <br />
@@ -68,7 +68,9 @@ const BTechLandingPage = () => {
               alt="Technology Icon"
               className="w-4 lg:w-5 h-4 lg:h-5"
             />
+            {/* <Link to="/health"> */}
             <span className="text-slate-700 font-semibold text-base lg:text-lg">Health</span>
+            {/* </Link> */}
           </button>
 
          {/* Transport - Right */}

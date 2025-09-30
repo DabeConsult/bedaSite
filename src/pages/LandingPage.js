@@ -68,9 +68,9 @@ const BTechLandingPage = () => {
               alt="Technology Icon"
               className="w-4 lg:w-5 h-4 lg:h-5"
             />
-            {/* <Link to="/health"> */}
+            <Link to="/health">
             <span className="text-slate-700 font-semibold text-base lg:text-lg">Health</span>
-            {/* </Link> */}
+            </Link>
           </button>
 
          {/* Transport - Right */}

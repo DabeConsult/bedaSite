@@ -6,6 +6,7 @@ import MaskGroupnew from "../assets/Images/Mask group.svg";
 import MobileUi from "../assets/Images/Mobile Ui.png";
 import MaskGroup from "../assets/Images/Mask group.svg";
 import Logo from "../assets/Images/B-HEAL+H.svg";
+import { Link } from "react-router-dom";
 
 const HealthPage = () => { 
 
@@ -16,9 +17,9 @@ const HealthPage = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center py-3 sm:py-4">
                         {/* Logo */}
-                        <div className="flex items-center">
+                        <Link to="/" className="flex items-center">
                            <img src={Logo} alt="B-Health Logo" className="h-6 sm:h-8 w-auto" />
-                        </div>
+                        </Link>
                         
                         {/* CTA Button */}
                         <a
@@ -144,10 +145,11 @@ const HealthPage = () => {
             <footer className="text-white py-6 sm:py-8">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
-                        <div className="flex items-center justify-center mb-3 sm:mb-4">
+                        <Link to={"/"}
+                         className="flex items-center justify-center mb-3 sm:mb-4">
                            
                             <img src={Logo} alt="B-Health Logo" className="h-6 sm:h-8 w-auto" />
-                        </div>
+                        </Link>
                         <p className="text-gray-400 text-xs sm:text-sm mb-3 sm:mb-4">
                             © B-Health Hospital Management System.
                         </p>

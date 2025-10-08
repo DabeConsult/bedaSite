@@ -7,6 +7,7 @@ import EggImage from "../assets/Farming Images/Eggs.svg";
 import Case from "../assets/Farming Images/Case.svg";
 import FarmingIOt from "../assets/Farming Images/Image_fx (51) 1.svg";
 import Logo from "../assets/Farming Images/Group 113.svg";
+import LogoHeader from "../assets/Farming Images/Mask group (1).svg";
 import aiicon from "../assets/Farming Images/Vector-1.svg";
 import Ioticon from "../assets/Farming Images/Vector.svg";
 import machineraryicon from "../assets/Farming Images/Vector-2.svg";
@@ -21,7 +22,7 @@ export default function BFarmingLanding() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <img
-              src={Logo}
+              src={LogoHeader}
              className="w-20 h-20  rounded-full flex items-center justify-center text-white font-bold">
             </img>
             <span className="text-xl font-semibold text-gray-900">B-FARMING</span>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Check, Wifi, Smartphone, Cloud, TrendingUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import heroImage from "../assets/Farming Images/Mask group (2).svg";
 import logoImage from "../assets/Farming Images/logo.svg";
 import AfricaImage from "../assets/Farming Images/africa.svg";
@@ -21,10 +22,12 @@ export default function BFarmingLanding() {
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
+            <Link to="/">
             <img
               src={LogoHeader}
              className="w-20 h-20  rounded-full flex items-center justify-center text-white font-bold">
             </img>
+            </Link>
             <span className="text-xl font-semibold text-gray-900">B-FARMING</span>
           </div>
           <a href="https://calendly.com/beda-consult/30min"

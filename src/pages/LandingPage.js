@@ -106,14 +106,14 @@ const BTechLandingPage = () => {
           </button>
 
           {/* Housing - Bottom Left */}
-          <button className="absolute -left-24 lg:-left-32 top-56 lg:top-72 bg-white border border-gray-200 rounded-full px-6 lg:px-8 py-3 lg:py-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 flex items-center space-x-3 z-10">
+          <a href="" className="absolute -left-24 lg:-left-32 top-56 lg:top-72 bg-white border border-gray-200 rounded-full px-6 lg:px-8 py-3 lg:py-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 flex items-center space-x-3 z-10">
              <img 
               src={LogoHousing} 
               alt="Technology Icon"
               className="w-4 lg:w-5 h-4 lg:h-5"
             />
             <span className="text-slate-700 font-semibold text-base lg:text-lg">Housing</span>
-          </button>
+          </a>
 
           {/* Entertainment - Bottom Right */}
           <button className="absolute -right-32 lg:-right-44 top-56 lg:top-72 bg-white border border-gray-200 rounded-full px-6 lg:px-8 py-3 lg:py-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 flex items-center space-x-3 z-10">

@@ -17,7 +17,7 @@ import HealthPage from "./pages/HealthPage";
 import FarmingPage from "./pages/FarmingPage";
 import HousingPage from "./pages/HousingPage";
 import Entertainment from "./pages/EntertainmentPage";
-
+import Transport from "./pages/TransportPage";
 function App() {
   const {data, loading} = useContext(DataContext);
 
@@ -31,6 +31,7 @@ function App() {
           <Route path="farming" element={<FarmingPage />} />
           <Route path="housing" element={<HousingPage />} />
           <Route path="entertainment" element={<Entertainment />} />
+          <Route path="transport" element={<Transport />} />
           <Route path="services" element={<Services />} />
           <Route path="app/:appID" element={<AppDevServices />} />
           <Route path="projects" element={<Projects />} />

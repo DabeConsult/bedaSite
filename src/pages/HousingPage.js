@@ -33,12 +33,13 @@ export default function HousingPage() {
     setSubmitStatus('');
 
     try {
-      const response = await fetch('https://formspree.io/f/mgvndlnz', {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
+          access_key: "0fddcd27-37b1-4553-8117-e9463c6d11a8",
           fullName: formData.fullName,
           email: formData.email,
           phone: formData.phone,

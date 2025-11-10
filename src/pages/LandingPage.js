@@ -74,14 +74,16 @@ const BTechLandingPage = () => {
           </button>
 
          {/* Transport - Right */}
-          <button className="absolute -right-40 lg:-right-52 top-4 lg:top-6 bg-white border border-gray-200 rounded-full px-6 lg:px-8 py-3 lg:py-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 flex items-center space-x-3 z-10" style={{ top: 'var(--transport-top, 1rem)' }}>
+          <Link
+            to="/transport"
+           className="absolute -right-40 lg:-right-52 top-4 lg:top-6 bg-white border border-gray-200 rounded-full px-6 lg:px-8 py-3 lg:py-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 flex items-center space-x-3 z-10" style={{ top: 'var(--transport-top, 1rem)' }}>
              <img 
               src={LogoTransport} 
               alt="Technology Icon"
               className="w-4 lg:w-5 h-4 lg:h-5"
             />
             <span className="text-slate-700 font-semibold text-base lg:text-lg">Transport</span>
-          </button>
+          </Link>
 
           {/* Farming - Bottom Left */}
           <Link 

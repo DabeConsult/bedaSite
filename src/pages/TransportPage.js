@@ -213,6 +213,7 @@ const TransportPage = () => {
                                           <li>• Comfortable seating</li>
                                       </ul>
                                   </div>
+                                  
                               </details>
 
                               {/* <button className="w-full py-3 border-2 border-black rounded-full font-medium hover:bg-black hover:text-white transition-colors">

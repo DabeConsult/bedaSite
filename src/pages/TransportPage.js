@@ -207,6 +207,7 @@ const TransportPage = () => {
                                   </summary>
                                   <div className="pt-3 text-sm text-gray-600">
                                       <ul className="space-y-1">
+                                        
                                           <li>• Premium air conditioning</li>
                                           <li>• 4 passengers</li>
                                           <li>• Extra luggage space</li>

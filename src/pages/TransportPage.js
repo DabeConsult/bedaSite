@@ -197,6 +197,7 @@ const TransportPage = () => {
                               <p className="text-sm font-medium mb-3">GET AROUND THE CITY WITH COMFORT</p>
                               <p className="text-gray-500 text-sm mb-4">
                                   Kia Rio, Mitsubishi Mirage, and Toyota Corolla
+                                  
                               </p>
 
                               {/* Features Dropdown */}

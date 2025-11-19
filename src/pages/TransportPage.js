@@ -9,6 +9,7 @@ import AppleImage from "../assets/B-Transport/Component 4.svg";
 import playstoreImage from "../assets/B-Transport/Component-4.svg";
 import AppgalleryImage from "../assets/B-Transport/Component4.svg";
 import Section from "../assets/B-Transport/Section.svg";
+import { QRCodeSVG } from 'qrcode.react';
 
 const TransportPage = () => {
       const countries = [
@@ -41,8 +42,10 @@ const TransportPage = () => {
             {/* Header */}
             <header className="bg-yellow-400 text-white px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                    <img src="icon-transport/Logo.svg" alt="B-Transport Logo" className="h-8 w-8" />
+                    <img src="icon-transport/Logo.svg" alt="B-Transport Logo" className="h-20 w-20" />
+                    <span>B-Transport</span>
                 </div>
+                
                
                 <img src="icon-transport/Item.svg" alt="Menu Icon" className="h-10 w-10 cursor-pointer" />
             </header>
@@ -60,10 +63,10 @@ const TransportPage = () => {
 
                <div className="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center">
                  <h1 className="text-5xl font-bold text-white mb-4">
-                   Ride with comfort in <br/>Ghana
+                   Ride with comfort  <br/>
                  </h1>
                  <p className="text-xl text-white mb-6">
-                   B-Transport, more than just a taxi in Ghana. Forget about regular taxis,
+                   B-Transport, more than just a taxi . Forget about regular taxis,
                    <br/>book rides, become a driver, or be a partner.
                  </p>
                  <div className="flex gap-4">
@@ -85,7 +88,7 @@ const TransportPage = () => {
                            <img src="icon-transport/Book your rides online.svg" alt="Dollar Sign" className="w-8 h-8 text-yellow-400" />
                         </div>
                         <h3 className="font-bold text-xl mb-2">Book your ride online</h3>
-                        <p className="text-gray-600">No more calls to taxi services or street hailing in Ghana</p>
+                        <p className="text-gray-600">No more calls to taxi services or street hailing </p>
                     </div>
                     <div className="text-center">
                         <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -240,11 +243,15 @@ const TransportPage = () => {
                             <h3 className="text-2xl font-bold mb-6">Order a ride online</h3>
                             <h5 className="text-xl ">Download the B-Transport app on iOS and Android now to book your ride instantly. </h5>
                             <div className="flex gap-4 mb-8">
-                                <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                                    <p className="text-gray-500 text-xs text-center">QR Code</p>
-                                </div>
-                               
+                            <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center p-2">
+                                <QRCodeSVG 
+                                    value={`https://calendly.com/beda-consult/30min`}
+                                    size={112}
+                                    level="H"
+                                    includeMargin={false}
+                                />
                             </div>
+                        </div>
                         </div>
                         <div className="h-64  rounded-3xl flex items-center justify-center">
                             <div className="text-center">
@@ -263,9 +270,14 @@ const TransportPage = () => {
                 <h5 className="text-xl text-center mb-6">Become our partner and earn up to 7000 GHC a month</h5>
                 <div className="flex justify-center">
                     <div className="flex gap-4 mb-6">
-                        <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                            <p className="text-gray-500 text-xs text-center">QR Code</p>
-                        </div>
+                         <div className="w-32 h-32 bg-white rounded-lg flex items-center justify-center p-2">
+                                <QRCodeSVG 
+                                    value={`https://calendly.com/beda-consult/30min`}
+                                    size={112}
+                                    level="H"
+                                    includeMargin={false}
+                                />
+                            </div>
                         <div>
                             <p className="font-semibold mb-2">Join B-Transport Pro</p>
                             <p className="text-gray-600 text-sm">Start earning on your schedule. Drive when you want.</p>
@@ -368,36 +380,13 @@ const TransportPage = () => {
                     <div className="grid md:grid-cols-4 gap-8 mb-8">
                         <div>
                             <div className="flex items-center gap-2 mb-4">
-                                <img src="icon-transport/Logo.svg" alt="B-Transport Logo" className="h-8 w-8" />
+                                <img src="icon-transport/Logo.svg" alt="B-Transport Logo" className="h-20 w-20" />
+                                <span>B-Transport</span>
                             </div>
-                            <div>
-                              <img src={playstoreImage} alt="B-transport" className="h-10 w-10"/>
-                            </div>
+                            
                         </div>
-                        <div>
-                            <h4 className="font-bold mb-4">Cities</h4>
-                            <ul className="space-y-2 text-gray-400 text-sm">
-                                <li><a href="#" className="hover:text-yellow-400">Kigali</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">Muhanga</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">Gisenyi</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 className="font-bold mb-4">Support</h4>
-                            <ul className="space-y-2 text-gray-400 text-sm">
-                                <li><a href="#" className="hover:text-yellow-400">Help Center</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">Safety</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 className="font-bold mb-4">Legal</h4>
-                            <ul className="space-y-2 text-gray-400 text-sm">
-                                <li><a href="#" className="hover:text-yellow-400">Terms</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">Privacy</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">Cookies</a></li>
-                            </ul>
-                        </div>
+                      
+                      
                     </div>
                     <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
                         <p>&copy; 2025 B-Transport. All rights reserved.</p>

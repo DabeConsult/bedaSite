@@ -3,6 +3,8 @@ import { Car, Shield, DollarSign, Clock, MapPin, Smartphone } from "lucide-react
 import { Link } from 'react-router-dom';
 import heroimage from "../assets/B-Transport/hero-bg.svg";
 import CarImage from "../assets/B-Transport/Car-image.svg";
+import Carimagess from '../assets/B-Transport/image1.png';
+import Carimageright from '../assets/B-Transport/image2.png'
 import EnjoyRideImage from "../assets/B-Transport/Enjoy-car.svg";
 import AppImage from "../assets/B-Transport/Section.svg";
 import AppleImage from "../assets/B-Transport/Component 4.svg";
@@ -160,7 +162,7 @@ const TransportPage = () => {
                       {/* Economy Card */}
                       <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                           <div className="bg-gradient-to-br from-yellow-300 to-yellow-400 h-64 flex items-center justify-center">
-                              <img src={CarImage} alt="Economy Car" className="w-full h-full object-cover" />
+                              <img src={Carimagess} alt="Economy Car" className="w-full h-full object-cover" />
                           </div>
                           <div className="p-6">
                               <h3 className="font-bold text-lg mb-1">Economy</h3>
@@ -193,7 +195,7 @@ const TransportPage = () => {
                       {/* Comfort Card */}
                       <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                           <div className="bg-gradient-to-br from-yellow-300 to-yellow-400 h-64 flex items-center justify-center">
-                              <img src={CarImage} alt="Comfort Car" className="w-full h-full object-cover" />
+                              <img src={Carimageright} alt="Comfort Car" className="w-full h-full object-cover" />
                           </div>
                           <div className="p-6">
                               <h3 className="font-bold text-lg mb-1">Comfort</h3>

@@ -44,8 +44,10 @@ const TransportPage = () => {
             {/* Header */}
             <header className="bg-yellow-400 text-white px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-2">
+                  <Link to="/">  
                     <img src="icon-transport/Logo.svg" alt="B-Transport Logo" className="h-20 w-20" />
                     <span>B-Transport</span>
+                    </Link>
                 </div>
                 
                

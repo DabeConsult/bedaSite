@@ -4,6 +4,7 @@ import heroImage from '../assets/B-Mine/Hero image.svg';
 import mobile from "../assets/B-Mine/Card.svg";
 import { Link } from 'react-router-dom';
 import Menatwork from "../assets/B-Mine/Card (1).svg"
+import Minexxwall from "../assets/B-Mine/minexxwall.svg";
 export default function MinePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -56,7 +57,7 @@ export default function MinePage() {
         </div>
 
         {/* Dashboard Preview */}
-        <div className="bg-zinc-800 rounded-lg p-4 md:p-8 max-w-6xl mx-auto">
+        <div className=" p-4 md:p-8 max-w-6xl mx-auto">
           <img src={heroImage}/>
         </div>
       </section>
@@ -99,7 +100,7 @@ export default function MinePage() {
       </section>
 
       {/* Why Choose Section */}
-      <section className="container mx-auto px-4 py-20">
+      <section className="container mx-auto  px-4 py-20 rounded-lg border border-zinc-700" style={{backgroundColor: '#2E2923'}}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose B-Minerals</h2>
@@ -149,51 +150,44 @@ export default function MinePage() {
             </Link>
           </div>
 
-          <div className="bg-zinc-800 rounded-lg p-8 h-96 flex items-center justify-center border-2 border-dashed border-zinc-700">
+          <div className=" flex items-center justify-center ">
             <div className="text-center">
              <img src={mobile}/>
             </div>
           </div>
         </div>
       </section>
-
+      <div></div>
       {/* About Us Section */}
-      <section className="bg-zinc-800 py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">About Us</h2>
-              <p className="text-zinc-400 mb-6">
-               We provide mining companies with cutting-edge technology to ensure transparency, security, and growth. Built on the foundation of Minexx’s expertise and powered by B-Tech innovation, B-Minerals is the future of digital mining solutions.
-              </p>
-             
-              <button className="px-8 py-3 border border-zinc-600 hover:border-zinc-500 rounded transition">
-                Powered By B-tech
-              </button>
-            </div>
+      <section className="container mt-12 mx-auto px-4 py-20 border border-zinc-700 rounded-lg" style={{backgroundColor: '#2E2923'}}>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 className="text-3xl md:text-4xl font-bold mb-6">About Us</h2>
+      <p className="text-zinc-400 mb-6">
+        We provide mining companies with cutting-edge technology to ensure transparency, security, and growth. Built on the foundation of Minexx's expertise and powered by B-Tech innovation, B-Minerals is the future of digital mining solutions.
+      </p>
+     
+      <button className="px-8 py-3 border border-zinc-600 hover:border-zinc-500 rounded transition">
+        Powered By B-tech
+      </button>
+    </div>
 
-            <div className="rounded-lg p-8 h-50 flex items-center justify-center ">
-              <div className="text-center">
-               <img src={heroImage} />
-              </div>
-            </div>
-          </div>
+    <div className="rounded-lg p-8 h-50 flex items-center justify-center ">
+      <div className="text-center">
+        <img src={heroImage} />
+      </div>
+    </div>
+  </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-            <div className="h-50 flex items-center justify-center ">
-              <div className="text-center">
-               <img src={Menatwork}/>
-              </div>
-            </div>
-            <div className="h-50 flex items-center justify-center ">
-              <div className="text-center">
-               <img src={Menatwork}/>
-              </div>
-            </div>
-           
-          </div>
-        </div>
-      </section>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
+    <div className="border border-zinc-700 rounded-lg overflow-hidden">
+      <img src={Menatwork} className="w-full h-full object-cover"/>
+    </div>
+    <div className="border border-zinc-700 rounded-lg overflow-hidden">
+      <img src={Minexxwall} className="w-full h-full object-cover"/>
+    </div>
+  </div>
+</section>
 
       {/* Contact Section */}
       <section className="container mx-auto px-4 py-20">
@@ -217,7 +211,7 @@ export default function MinePage() {
       {/* Footer */}
       <footer className="border-t border-zinc-800 py-8">
         <div className="container mx-auto px-4 text-center text-zinc-500 text-sm">
-          <p>Copyright © {new Date().getFullYear()} B-Mineral - Powered by B-Tech</p>
+          <p>Copyright © {new Date().getFullYear()} B-Mineral - Powered by <span className="font-bold text-white">B-Tech</span></p>
         </div>
       </footer>
     </div>

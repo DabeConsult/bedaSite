@@ -98,7 +98,7 @@ const BTechLandingPage = () => {
           </Link>
 
           {/* Minerals - Bottom Right */}
-          <Link to="/mining"
+          <Link to=""
               className="absolute -right-28 lg:-right-36 top-32 lg:top-40 bg-white border border-gray-200 rounded-full px-6 lg:px-8 py-3 lg:py-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200 flex items-center space-x-3 z-10">
             <img 
               src={LogoMinerals} 
